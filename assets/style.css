@@ -254,6 +254,9 @@ input[type=submit] {
 	.sidebar {
 		margin-right: 50px;
 	}
+	.work {
+		  width: 100%;
+	}
 
 }
 
@@ -269,16 +272,19 @@ input[type=submit] {
   		float: none;
   		width: 100%;
   		margin: 0px auto;
+  				  overflow: auto;
   	}
     .sidebar {
 		float: none;
 		clear: both;
-		/*I need a way to make the sidebar 100% width, like the main-section. */
-		width: 100%; 
+		width: 100%; /*This doesn't work to make the sidebar 100% width, like the main-section. */
 		padding: 30px;
 		margin: 20px auto;
 		background: #fff;
 		border: 1px solid #ddd;
+	}
+	.work {
+		  width: 274px;
 	}
 }
 
@@ -295,8 +301,8 @@ input[type=submit] {
 	}
 	nav {
   		margin: 25px auto;
-  		/*I need a way to center the nav links.*/
-  		text-align: center;
+  		padding: 0 15%; /*My ghetto way of centering the nav links.*/
+  		/*text-align: center;*/ /*This didn't work to center nav links.*/
 	}
 	.left {
 		float: left;
@@ -305,7 +311,9 @@ input[type=submit] {
 		float: right;
 	}
 	.sidebar {
-		/*I need a way to make the sidebar 100% width, like the main-section. */
-		width: 100%; 
+		width: 100%; /*This doesn't work to make the sidebar 100% width, like the main-section. */
+	}
+		.work {
+		  width: 100%;
 	}
 }
