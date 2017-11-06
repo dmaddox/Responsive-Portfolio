@@ -151,7 +151,7 @@ h3,
   width: 100%;
   max-width: 650px;
   padding: 30px;
-  margin: 0 0 40px;
+  margin: 0 0 40px 0;
   background: #fff;
   border: 1px solid #ddd;
 }
@@ -266,18 +266,21 @@ input[type=submit] {
   		padding: 0px 25px;
     }
     #main-container {
- 		padding-top: 0px;
+    padding: 0px 25px 0px 25px;
+
 	}
     .main-section {
   		float: none;
   		width: 100%;
   		margin: 0px auto;
-  				  overflow: auto;
+          max-width: 960px;
+  		overflow: auto;
   	}
     .sidebar {
 		float: none;
 		clear: both;
-		width: 100%; /*This doesn't work to make the sidebar 100% width, like the main-section. */
+		width: 100%; 
+    max-width: 960px;
 		padding: 30px;
 		margin: 20px auto;
 		background: #fff;
@@ -298,12 +301,16 @@ input[type=submit] {
 	}
 	#logo {
 		width: 100%;
+
 	}
 	nav {
-  		margin: 25px auto;
-  		padding: 0 15%; /*My ghetto way of centering the nav links.*/
-  		/*text-align: center;*/ /*This didn't work to center nav links.*/
+    float: none;
+    margin: 0px;
+       text-align: center;
 	}
+  nav a:first-child {
+  margin-left: 0px;
+}
 	.left {
 		float: left;
 	}
@@ -311,7 +318,7 @@ input[type=submit] {
 		float: right;
 	}
 	.sidebar {
-		width: 100%; /*This doesn't work to make the sidebar 100% width, like the main-section. */
+		width: 100%;
 	}
 		.work {
 		  width: 100%;
